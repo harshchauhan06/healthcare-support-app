@@ -89,9 +89,6 @@
     line-height: 1.7;
 }
 
-
-/* Mobile */
-
 @media (max-width: 768px) {
     .patient-support-container {
         padding: 2rem;
