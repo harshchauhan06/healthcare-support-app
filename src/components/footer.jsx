@@ -1,10 +1,12 @@
+import hospitalIcon from "../assets/hospital.svg";
+
 function Footer() {
   return (
     <footer className="footer">
 
       <div className="footer-content">
 
-        <h2>🏥 Healthcare Portal</h2>
+        <h2><img className="footer-icon" src={hospitalIcon} alt="Hospital Icon" /> Healix</h2>
 
         <p className="footer-description">
           Dedicated to connecting patients, volunteers,
@@ -15,13 +17,13 @@ function Footer() {
         <div className="footer-stats">
 
           <div className="footer-item">
-            <h3>24/7</h3>
-            <p>Support Access</p>
+            <h3>Easy</h3>
+<p>Access to Help</p>
           </div>
 
           <div className="footer-item">
-            <h3>100%</h3>
-            <p>Volunteer Driven</p>
+            <h3>Community</h3>
+<p>Volunteer Support</p>
           </div>
 
           <div className="footer-item">

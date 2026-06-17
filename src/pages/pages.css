@@ -1,0 +1,102 @@
+.patient-support-page {
+    min-height: 100vh;
+    background: #F8FAF8;
+    padding: 4rem 1rem;
+}
+
+.patient-support-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 24px;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.patient-support-container h1 {
+    color: #111111;
+    margin-bottom: 1rem;
+}
+
+.patient-support-container p {
+    color: #555555;
+    line-height: 1.8;
+}
+
+.patient-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.patient-form input,
+.patient-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+.patient-form input:focus,
+.patient-form textarea:focus {
+    outline: none;
+    border-color: #71FF9A;
+    box-shadow: 0 0 0 4px rgba(113, 255, 154, 0.15);
+}
+
+.patient-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #71FF9A;
+    color: #111111;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #B5FE68;
+    transform: translateY(-2px);
+}
+
+.summary-card {
+    margin-top: 2rem;
+    background: #F4FFF7;
+    border-left: 5px solid #71FF9A;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.summary-card h3 {
+    color: #111111;
+    margin-bottom: 1rem;
+}
+
+.summary-card p {
+    white-space: pre-line;
+    color: #555555;
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .patient-support-container {
+        padding: 2rem;
+    }
+    .patient-support-container h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero1.png";
+import heroImage from "../assets/herot.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -12,10 +12,10 @@ function Hero() {
         </p>
 
         <h1>
-          Connecting Patients,
-          Volunteers and Care
-          Services
-        </h1>
+  Connecting Patients,
+  Volunteers & Healthcare
+  Support
+</h1>
 
         <p className="hero-description">
           A simple platform where patients can seek
@@ -40,7 +40,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src={heroImage} alt="Healthcare" />
+        <img className="hero-img" src={heroImage} alt="Healthcare" />
       </div>
 
     </section>
