@@ -8,10 +8,10 @@ function Navbar({ setShowFAQ }) {
       </div>
 
       <div className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Patient Support</a>
-        <a href="#">Volunteer</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/patient-support">Patient Support</Link>
+        <Link to="/volunteer-registration">Volunteer</Link>
+        <Link to="/contact">Contact</Link>
       </div>
 
       <button

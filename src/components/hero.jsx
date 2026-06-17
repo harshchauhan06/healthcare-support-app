@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/hero1.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -30,16 +30,17 @@ function Hero() {
                   Patient Support
                 </button>
          </Link>
-
-          <button className="secondary-btn">
-            Volunteer
-          </button>
+          <Link to="/volunteer-registration">
+            <button className="secondary-btn">
+              Volunteer
+            </button>
+          </Link>
         </div>
 
       </div>
 
       <div className="hero-image">
-        <img src="../src/assets/hero1.png" alt="Healthcare" />
+        <img src={heroImage} alt="Healthcare" />
       </div>
 
     </section>
