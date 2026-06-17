@@ -33,17 +33,17 @@ function App() {
         }
       />
 
-      <Route
-        path="/patient-support"
-        element={<PatientSupport />}
-      />
+     <Route
+  path="/patient-support"
+  element={<PatientSupport setShowFAQ={setShowFAQ} />}
+/>
       <Route
         path="/contact"
-        element={<Contact />}
+        element={<Contact setShowFAQ={setShowFAQ} />}
       />
       <Route
         path="/volunteer-registration"
-        element={<VolunteerRegistration />}
+        element={<VolunteerRegistration setShowFAQ={setShowFAQ} />}
       />
     </Routes>
   </>

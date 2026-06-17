@@ -1,8 +1,9 @@
 import "./PatientSupport.css";
 import { useState } from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
-function PatientSupport() {
+function PatientSupport({ setShowFAQ }) {
    const [formData, setFormData] = useState({
   name: "",
   age: "",
@@ -35,12 +36,19 @@ Concern: ${formData.concern}
 Auto Summary:
 Patient reported ${formData.concern.toLowerCase()} and requested support assistance.
 `);
+setFormData({
+  name: "",
+  age: "",
+  phone: "",
+  concern: "",
+  description: "",
+});
 }
 
 
   return (
     <>
-     <Navbar />
+     <Navbar setShowFAQ={setShowFAQ} />
     <div className="patient-support-page">
       <div className="patient-support-container">
 
@@ -103,7 +111,10 @@ Patient reported ${formData.concern.toLowerCase()} and requested support assista
 )}
 
       </div>
+       
     </div>
+    <Footer />
+    
   </>);
 }
 
