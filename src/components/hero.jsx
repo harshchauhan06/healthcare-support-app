@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero.png";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -24,9 +25,11 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">
-            Patient Support
-          </button>
+          <Link to="/patient-support">
+                <button className="primary-btn">
+                  Patient Support
+                </button>
+         </Link>
 
           <button className="secondary-btn">
             Volunteer

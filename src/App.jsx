@@ -6,24 +6,38 @@ import Services from "./components/services";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import FAQModal from "./components/FAQModal";
+import PatientSupport from "./pages/PatientSupport";
 function App() {
 
   const [showFAQ, setShowFAQ] = useState(false);
 
   
    return (
-    <div className="App">
-    <Navbar setShowFAQ={setShowFAQ} />
-         {showFAQ && (
-             <FAQModal setShowFAQ={setShowFAQ} />
-                  )}
+  <>
+    {showFAQ && (
+      <FAQModal setShowFAQ={setShowFAQ} />
+    )}
 
-    <Hero />
-    <Services />
-    <Footer />
-  </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="App">
+            <Navbar setShowFAQ={setShowFAQ} />
+            <Hero />
+            <Services />
+            <Footer />
+          </div>
+        }
+      />
 
-   );
+      <Route
+        path="/patient-support"
+        element={<PatientSupport />}
+      />
+    </Routes>
+  </>
+);
 }
 
 export default App;
